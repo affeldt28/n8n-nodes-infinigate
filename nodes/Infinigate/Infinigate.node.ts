@@ -1,5 +1,5 @@
 import { type INodeType, type INodeTypeDescription, NodeConnectionTypes } from 'n8n-workflow';
-import { purchaseCreditMemo, purchaseInvoice } from './descriptions';
+import { purchaseCreditMemo, purchaseInvoice, purchaseQuote } from './descriptions';
 
 export class Infinigate implements INodeType {
 	description: INodeTypeDescription = {
@@ -41,10 +41,15 @@ export class Infinigate implements INodeType {
 						name: 'Purchase invoice',
 						value: 'purchaseInvoice',
 					},
+					{
+						name: 'Purchase quote',
+						value: 'purchaseQuote',
+					},
 				],
 			},
 			...purchaseCreditMemo.description,
 			...purchaseInvoice.description,
+			...purchaseQuote.description,
 		],
 	};
 	methods = {};
