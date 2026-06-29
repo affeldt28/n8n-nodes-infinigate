@@ -1,6 +1,7 @@
 import type { INodeProperties } from 'n8n-workflow';
 import * as getAll from './getAll.operation';
 import * as getByDocumentId from './getByDocumentId.operation';
+import * as getByDocumentNumber from './getByDocumentNumber.operation';
 
 export const description: INodeProperties[] = [
 	{
@@ -39,8 +40,21 @@ export const description: INodeProperties[] = [
 				},
 				action: 'Get CreditMemo by documentId',
 			},
+			{
+				name: 'CreditMemo by documentNumber',
+				description: 'Get the PurchaseCreditMemo by documentNumber',
+				value: 'getByDocumentNumber',
+				routing: {
+					request: {
+						method: 'GET',
+						url: '=/invoice-management/v2/purchasecreditmemo/documentNumber/{{ $parameter.documentNumber }}',
+					},
+				},
+				action: 'Get CreditMemo by documentNumber',
+			},
 		],
 	},
 	...getAll.description,
 	...getByDocumentId.description,
+	...getByDocumentNumber.description,
 ];
