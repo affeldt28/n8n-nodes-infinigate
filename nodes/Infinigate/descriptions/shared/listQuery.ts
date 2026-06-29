@@ -59,7 +59,7 @@ export const listQueryProperties: INodeProperties[] = [
 		name: 'Take',
 		displayName: 'Take',
 		type: 'number',
-		default: 100,
+		default: '',
 		description: 'Number of items to take',
 		routing: {
 			send: {
@@ -72,7 +72,7 @@ export const listQueryProperties: INodeProperties[] = [
 		name: 'Skip',
 		displayName: 'Skip',
 		type: 'number',
-		default: 0,
+		default: '',
 		description: 'Number of items to skip',
 		routing: {
 			send: {
