@@ -8,10 +8,9 @@ export const periodQueryParameters: INodeProperties[] = [
 		default: '',
 		description: 'Filter for PeriodStart',
 		routing: {
-			request: {
-				qs: {
-					PeriodStart: '={{$value.toISOString()}}',
-				},
+			send: {
+				type: 'query',
+				property: 'PeriodStart',
 			},
 		},
 	},
@@ -22,10 +21,9 @@ export const periodQueryParameters: INodeProperties[] = [
 		default: '',
 		description: 'Filter for PeriodEnd',
 		routing: {
-			request: {
-				qs: {
-					PeriodEnd: '={{$value.toISOString()}}',
-				},
+			send: {
+				type: 'query',
+				property: 'PeriodEnd',
 			},
 		},
 	},
