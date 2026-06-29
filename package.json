@@ -1,0 +1,60 @@
+{
+	"name": "@affeldt28/n8n-nodes-infinigate",
+	"version": "0.1.0",
+	"description": "n8n node for Infinigate",
+	"license": "MIT",
+	"homepage": "https://github.com/affeldt28/n8n-nodes-infinigate",
+	"keywords": [
+		"n8n-community-node-package",
+		"infinigate",
+		"distribution",
+		"procurement",
+		"b2b",
+		"reseller",
+		"quotes"
+	],
+	"author": {
+		"name": "Marvin Affeldt",
+		"email": "code@affeldt.dev"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/affeldt28/n8n-nodes-infinigate.git"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"format": "biome format --write ",
+		"lint": "biome check",
+		"lint:fix": "biome check --write",
+		"n8n-lint": "n8n-node lint",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/InfinigateApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/Infinigate/Infinigate.node.js"
+		]
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.5.1",
+		"@n8n/node-cli": "*",
+		"release-it": "20.2.0",
+		"typescript": "6.0.3"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}
