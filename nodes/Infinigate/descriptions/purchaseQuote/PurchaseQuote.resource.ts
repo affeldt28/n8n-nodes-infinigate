@@ -23,7 +23,7 @@ export const description: INodeProperties[] = [
 				routing: {
 					request: {
 						method: 'GET',
-						url: '/invoice-management/v2/purchasequote',
+						url: '/order-management/v2/purchasequote',
 					},
 				},
 				action: 'Get Quote overview list',
@@ -35,7 +35,7 @@ export const description: INodeProperties[] = [
 				routing: {
 					request: {
 						method: 'GET',
-						url: '=/invoice-management/v2/purchasequote/{{ $parameter.documentGuid }}',
+						url: '=/order-management/v2/purchasequote/{{ $parameter.documentGuid }}',
 					},
 				},
 				action: 'Get Quote by documentId',
@@ -47,7 +47,7 @@ export const description: INodeProperties[] = [
 				routing: {
 					request: {
 						method: 'GET',
-						url: '=/invoice-management/v2/purchasequote/documentNumber/{{ $parameter.documentNumber }}',
+						url: '=/order-management/v2/purchasequote/documentNumber/{{ $parameter.documentNumber }}',
 					},
 				},
 				action: 'Get Quote by documentNumber',
