@@ -51,11 +51,11 @@ This node currently supports the following Infinigate resources and operations.
 
 | Operation                           | API                                                            | Implemented |
 | ----------------------------------- | -------------------------------------------------------------- | ----------- |
-| Get PriceList Item search           | GET /product-management/v1/pricelist/search/{searchword}       | 🚫           |
-| Get PriceList By VendorSkus         | GET /product-management/v1/pricelist/vendor                    | 🚫           |
-| Get PriceList By Skus               | GET /product-management/v1/pricelist/skus                      | 🚫           |
-| Get PriceList Item Count            | GET /product-management/v1/pricelist/search/count/{searchword} | 🚫           |
-| Get all products for a Manufacturer | GET /product-management/v1/pricelist/                          | 🚫           |
+| Get PriceList Item search           | GET /product-management/v1/pricelist/search/{searchword}       | ✅           |
+| Get PriceList By VendorSkus         | GET /product-management/v1/pricelist/vendor                    | ✅           |
+| Get PriceList By Skus               | GET /product-management/v1/pricelist/skus                      | ✅           |
+| Get PriceList Item Count            | GET /product-management/v1/pricelist/search/count/{searchword} | ✅           |
+| Get all products for a Manufacturer | GET /product-management/v1/pricelist/                          | ✅           |
 | Get List of all Manufacturer names  | GET /product-management/v1/manufacturer                        | 🚫           |
 
 ## Credentials
