@@ -1,6 +1,7 @@
 import { type INodeProperties, updateDisplayOptions } from 'n8n-workflow';
+import { listQueryProperties } from '../shared/listQuery';
 
-const properties: INodeProperties[] = [];
+const properties: INodeProperties[] = [...listQueryProperties];
 
 const displayOptions = {
 	show: {
