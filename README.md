@@ -32,9 +32,9 @@ This node currently supports the following Infinigate resources and operations.
 | CreditMemo overview list     | GET /invoice-management/v2/purchasecreditmemo                                 | ✅           |
 | CreditMemo by documentId     | GET /invoice-management/v2/purchasecreditmemo/{documentGuid}                  | ✅           |
 | CreditMemo by documentNumber | GET /invoice-management/v2/purchasecreditmemo/documentNumber/{documentNumber} | ✅           |
-| Invoice overview list        | GET /invoice-management/v2/purchaseinvoice                                    | 🚫           |
-| Invoice by documentId        | GET /invoice-management/v2/purchaseinvoice/{documentGuid}                     | 🚫           |
-| Invoice by documentNumber    | GET /invoice-management/v2/purchaseinvoice/documentNumber/{documentNumber}    | 🚫           |
+| Invoice overview list        | GET /invoice-management/v2/purchaseinvoice                                    | ✅           |
+| Invoice by documentId        | GET /invoice-management/v2/purchaseinvoice/{documentGuid}                     | ✅           |
+| Invoice by documentNumber    | GET /invoice-management/v2/purchaseinvoice/documentNumber/{documentNumber}    | ✅           |
 
 ### Order-Management
 
