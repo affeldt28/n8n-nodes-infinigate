@@ -56,7 +56,7 @@ This node currently supports the following Infinigate resources and operations.
 | Get PriceList By Skus               | GET /product-management/v1/pricelist/skus                      | ✅           |
 | Get PriceList Item Count            | GET /product-management/v1/pricelist/search/count/{searchword} | ✅           |
 | Get all products for a Manufacturer | GET /product-management/v1/pricelist/                          | ✅           |
-| Get List of all Manufacturer names  | GET /product-management/v1/manufacturer                        | 🚫           |
+| Get List of all Manufacturer names  | GET /product-management/v1/manufacturer                        | ✅           |
 
 ## Credentials
 
