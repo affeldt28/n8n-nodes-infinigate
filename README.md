@@ -43,9 +43,9 @@ This node currently supports the following Infinigate resources and operations.
 | Get Quote overview list                       | GET /order-management/v2/purchasequote                                 | ✅           |
 | Get Quote by documentId                       | GET /order-management/v2/purchasequote/{documentGuid}                  | ✅           |
 | Get Quote by documentNumber                   | GET /order-management/v2/purchasequote/documentNumber/{documentNumber} | ✅           |
-| Post acceptance for Quote with documentNumber | POST /order-managment/v2/purchasequote/acceptance                      | 🚫           |
-| Post reject for Quote with documentNumber     | POST /order-managment/v2/purchasequote/reject                          | 🚫           |
-| Post request for a PurchaseOrder              | POST /order-managment/v2/purchaseorder/request                         | 🚫           |
+| Post acceptance for Quote with documentNumber | POST /order-managment/v2/purchasequote/acceptance                      | ✅           |
+| Post reject for Quote with documentNumber     | POST /order-managment/v2/purchasequote/reject                          | ✅           |
+| Post request for a PurchaseOrder              | POST /order-managment/v2/purchaseorder/request                         | ✅           |
 
 ### Product-Management
 
