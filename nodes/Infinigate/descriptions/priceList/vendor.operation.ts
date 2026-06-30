@@ -20,6 +20,7 @@ const properties: INodeProperties[] = [
 		routing: {
 			send: {
 				type: 'query',
+				// API expects the query parameter to be named 'no' for filtering by VenderSkus
 				property: 'no',
 			},
 		},
