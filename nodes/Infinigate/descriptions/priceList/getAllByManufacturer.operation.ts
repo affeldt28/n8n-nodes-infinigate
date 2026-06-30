@@ -11,7 +11,7 @@ const properties: INodeProperties[] = [
 		routing: {
 			send: {
 				type: 'query',
-				value: 'manufacturerName',
+				property: 'manufacturerName',
 			},
 		},
 	},

@@ -20,7 +20,7 @@ const properties: INodeProperties[] = [
 		routing: {
 			send: {
 				type: 'query',
-				value: 'no',
+				property: 'no',
 			},
 		},
 	},

@@ -28,7 +28,7 @@ const properties: INodeProperties[] = [
 		routing: {
 			send: {
 				type: 'query',
-				value: 'VendorCodes',
+				property: 'VendorCodes',
 			},
 		},
 	},
@@ -50,7 +50,7 @@ const properties: INodeProperties[] = [
 		routing: {
 			send: {
 				type: 'query',
-				value: 'ProductTypes',
+				property: 'ProductTypes',
 			},
 		},
 	},
@@ -72,7 +72,7 @@ const properties: INodeProperties[] = [
 		routing: {
 			send: {
 				type: 'query',
-				value: 'EndUserTypes',
+				property: 'EndUserTypes',
 			},
 		},
 	},
