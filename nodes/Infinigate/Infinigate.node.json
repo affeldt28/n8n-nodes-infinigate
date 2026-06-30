@@ -1,5 +1,5 @@
 {
-	"node": "n8n-nodes-infinigate-infinigate",
+	"node": "@affeldt28/n8n-nodes-infinigate.infinigate",
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
 	"categories": [
