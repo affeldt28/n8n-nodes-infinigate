@@ -193,6 +193,12 @@ const properties: INodeProperties[] = [
 		displayName: 'Header',
 		type: 'collection',
 		default: {},
+		routing: {
+			send: {
+				type: 'body',
+				property: 'header',
+			},
+		},
 		options: [
 			{
 				name: 'manufacturerPartnerId',
@@ -321,6 +327,12 @@ const properties: INodeProperties[] = [
 		displayName: 'Lines',
 		type: 'fixedCollection',
 		default: {},
+		routing: {
+			send: {
+				type: 'body',
+				property: 'lines',
+			},
+		},
 		typeOptions: {
 			multipleValues: true,
 		},
