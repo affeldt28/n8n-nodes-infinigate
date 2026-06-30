@@ -7,7 +7,8 @@ const properties: INodeProperties[] = [
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Get all products for a Manufacturer',
+		placeholder: 'e.g. manufacturerName',
+		description: 'The manufacturer name to retrieve price list items for',
 		routing: {
 			send: {
 				type: 'query',

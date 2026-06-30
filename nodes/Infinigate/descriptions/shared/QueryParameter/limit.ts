@@ -4,7 +4,7 @@ export const limitQueryParameters: INodeProperties[] = [
 	{
 		name: 'useLimit',
 		displayName: 'Use Limit',
-		description: 'Whether to use limit for the request',
+		description: 'Whether to limit the number of returned items',
 		type: 'boolean',
 		default: false,
 	},
@@ -12,8 +12,8 @@ export const limitQueryParameters: INodeProperties[] = [
 		name: 'Take',
 		displayName: 'Take',
 		type: 'number',
-		default: '',
-		description: 'Number of items to take',
+		default: 50,
+		description: 'Maximum number of items to return',
 		displayOptions: {
 			show: {
 				useLimit: [true],
@@ -30,7 +30,7 @@ export const limitQueryParameters: INodeProperties[] = [
 		name: 'Skip',
 		displayName: 'Skip',
 		type: 'number',
-		default: '',
+		default: 0,
 		description: 'Number of items to skip',
 		displayOptions: {
 			show: {

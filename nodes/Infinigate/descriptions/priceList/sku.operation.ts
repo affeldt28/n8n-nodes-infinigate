@@ -4,17 +4,18 @@ import { limitQueryParameters } from '../shared/QueryParameter';
 const properties: INodeProperties[] = [
 	{
 		name: 'Skus',
-		displayName: 'List of Skus',
+		displayName: 'SKUs',
 		type: 'collection',
-		description: 'Filter for specific Skus',
-		default: '',
+		description: 'Filter by specific SKUs',
+		default: {},
 		options: [
 			{
-				name: 'Sku',
-				displayName: 'Sku',
+				name: 'SKU',
+				displayName: 'SKU',
 				type: 'string',
 				default: '',
-				description: 'Filter for specific Sku',
+				placeholder: 'e.g. sku',
+				description: 'SKU to filter by',
 			},
 		],
 		routing: {

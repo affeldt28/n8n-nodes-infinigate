@@ -4,25 +4,27 @@ import { limitQueryParameters } from '../shared/QueryParameter';
 const properties: INodeProperties[] = [
 	{
 		name: 'searchword',
-		displayName: 'Search Word',
+		displayName: 'Search Term',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Filter Products by searchWord',
+		placeholder: 'e.g. automation',
+		description: 'Filter products by search term',
 	},
 	{
 		name: 'VendorCodes',
 		displayName: 'Vendor Codes',
 		type: 'collection',
-		description: 'Filter for specific VendorCodes',
-		default: '',
+		description: 'Filter by specific vendor codes',
+		default: {},
 		options: [
 			{
 				name: 'Vendor Code',
 				displayName: 'Vendor Code',
 				type: 'string',
 				default: '',
-				description: 'Filter for specific VendorCode',
+				placeholder: 'e.g. vendorCode',
+				description: 'Vendor code to filter by',
 			},
 		],
 		routing: {
@@ -36,15 +38,16 @@ const properties: INodeProperties[] = [
 		name: 'ProductTypes',
 		displayName: 'Product Types',
 		type: 'collection',
-		description: "Filter for specific ProductTypes like 'Hardware' or 'Software'",
-		default: '',
+		description: 'Filter by specific product types, for example hardware or software',
+		default: {},
 		options: [
 			{
 				name: 'Product Type',
 				displayName: 'Product Type',
 				type: 'string',
 				default: '',
-				description: 'Filter for specific ProductType',
+				placeholder: 'e.g. hardware',
+				description: 'Product type to filter by',
 			},
 		],
 		routing: {
@@ -58,15 +61,17 @@ const properties: INodeProperties[] = [
 		name: 'EndUserTypes',
 		displayName: 'End User Types',
 		type: 'collection',
-		description: "Filter for specific EndUserTypes like 'Std', 'Edu' or 'GOV'",
-		default: '',
+		description:
+			'Filter by specific end user types, for example standard, education, or government',
+		default: {},
 		options: [
 			{
 				name: 'End User Type',
 				displayName: 'End User Type',
 				type: 'string',
 				default: '',
-				description: 'Filter for specific EndUserType',
+				placeholder: 'e.g. standard',
+				description: 'End user type to filter by',
 			},
 		],
 		routing: {

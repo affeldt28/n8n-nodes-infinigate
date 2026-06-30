@@ -15,7 +15,7 @@ export const description: INodeProperties[] = [
 		},
 		options: [
 			{
-				name: 'Get List of all Manufacturer names',
+				name: 'Get Many',
 				description: 'Get a list of all manufacturer names',
 				value: 'getAll',
 				routing: {
@@ -24,7 +24,7 @@ export const description: INodeProperties[] = [
 						url: '/product-management/v1/manufacturer',
 					},
 				},
-				action: 'Get list of all manufacturer names',
+				action: 'Get many manufacturers',
 			},
 		],
 	},

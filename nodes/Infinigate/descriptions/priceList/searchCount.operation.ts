@@ -3,11 +3,12 @@ import { type INodeProperties, updateDisplayOptions } from 'n8n-workflow';
 const properties: INodeProperties[] = [
 	{
 		name: 'searchword',
-		displayName: 'Search Word',
+		displayName: 'Search Term',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Filter Products by searchWord',
+		placeholder: 'e.g. automation',
+		description: 'Filter products by search term',
 	},
 ];
 

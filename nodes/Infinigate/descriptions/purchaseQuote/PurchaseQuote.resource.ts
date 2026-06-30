@@ -20,8 +20,8 @@ export const description: INodeProperties[] = [
 		},
 		options: [
 			{
-				name: 'Quote overview list',
-				description: 'Get all DocumentInfo of type PurchaseQuote for user',
+				name: 'Get Many',
+				description: 'Retrieve a list of purchase quotes',
 				value: 'getAll',
 				routing: {
 					request: {
@@ -29,11 +29,11 @@ export const description: INodeProperties[] = [
 						url: '/order-management/v2/purchasequote',
 					},
 				},
-				action: 'Get Quote overview list',
+				action: 'Get many purchase quotes',
 			},
 			{
-				name: 'Quote by documentId',
-				description: 'Get the PurchaseQuote by documentId',
+				name: 'Get by Document Id',
+				description: 'Retrieve a purchase quote by document Id',
 				value: 'getByDocumentId',
 				routing: {
 					request: {
@@ -41,11 +41,11 @@ export const description: INodeProperties[] = [
 						url: '=/order-management/v2/purchasequote/{{ $parameter.documentGuid }}',
 					},
 				},
-				action: 'Get Quote by documentId',
+				action: 'Get purchase quote by document Id',
 			},
 			{
-				name: 'Quote by documentNumber',
-				description: 'Get the PurchaseQuote by documentNumber',
+				name: 'Get by Document Number',
+				description: 'Retrieve a purchase quote by document number',
 				value: 'getByDocumentNumber',
 				routing: {
 					request: {
@@ -53,11 +53,11 @@ export const description: INodeProperties[] = [
 						url: '=/order-management/v2/purchasequote/documentNumber/{{ $parameter.documentNumber }}',
 					},
 				},
-				action: 'Get Quote by documentNumber',
+				action: 'Get purchase quote by document number',
 			},
 			{
-				name: 'Quote acceptance by documentNumber',
-				description: 'Post acceptance for documentNumber',
+				name: 'Accept',
+				description: 'Accept a purchase quote by document number',
 				value: 'acceptance',
 				routing: {
 					request: {
@@ -65,11 +65,11 @@ export const description: INodeProperties[] = [
 						url: '/order-management/v2/purchasequote/acceptance',
 					},
 				},
-				action: 'Post Quote acceptance by documentNumber',
+				action: 'Accept purchase quote',
 			},
 			{
-				name: 'Quote rejection by documentNumber',
-				description: 'Post rejection for documentNumber',
+				name: 'Reject',
+				description: 'Reject a purchase quote by document number',
 				value: 'reject',
 				routing: {
 					request: {
@@ -77,11 +77,11 @@ export const description: INodeProperties[] = [
 						url: '/order-management/v2/purchasequote/reject',
 					},
 				},
-				action: 'Post Quote rejection by documentNumber',
+				action: 'Reject purchase quote',
 			},
 			{
-				name: 'Quote request',
-				description: 'Post request for PurchaseQuote',
+				name: 'Request',
+				description: 'Request a purchase quote',
 				value: 'request',
 				routing: {
 					request: {
@@ -89,7 +89,7 @@ export const description: INodeProperties[] = [
 						url: '/order-management/v2/purchasequote/request',
 					},
 				},
-				action: 'Post Quote request',
+				action: 'Request purchase quote',
 			},
 		],
 	},

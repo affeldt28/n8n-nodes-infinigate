@@ -6,7 +6,8 @@ const properties: INodeProperties[] = [
 		displayName: 'Document Number',
 		type: 'string',
 		default: '',
-		description: 'The document number of the purchase quote.',
+		placeholder: 'e.g. documentNumber',
+		description: 'The document number of the purchase quote',
 		routing: {
 			send: {
 				type: 'body',
@@ -19,7 +20,7 @@ const properties: INodeProperties[] = [
 		displayName: 'Document Revision',
 		type: 'number',
 		default: 0,
-		description: 'The document revision of the purchase quote.',
+		description: 'The document revision of the purchase quote',
 		routing: {
 			send: {
 				type: 'body',
@@ -29,10 +30,11 @@ const properties: INodeProperties[] = [
 	},
 	{
 		name: 'rejectedByUserMail',
-		displayName: 'Rejected By User Mail',
+		displayName: 'Rejected By User Email',
 		type: 'string',
 		default: '',
-		description: 'The email of the user who rejected the purchase quote.',
+		placeholder: 'e.g. nathan@example.com',
+		description: 'The email address of the user who rejected the purchase quote',
 		routing: {
 			send: {
 				type: 'body',
@@ -45,7 +47,7 @@ const properties: INodeProperties[] = [
 		displayName: 'User Comments',
 		type: 'string',
 		default: '',
-		description: 'Comments provided by the user when rejecting the purchase quote.',
+		description: 'Comments provided by the user when rejecting the purchase quote',
 		routing: {
 			send: {
 				type: 'body',

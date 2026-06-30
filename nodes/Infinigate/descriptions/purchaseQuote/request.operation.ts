@@ -114,10 +114,10 @@ const manufacturerAdditionalInfoProperties: INodeProperties[] = [
 	},
 	{
 		name: 'licenseId',
-		displayName: 'License ID',
+		displayName: 'License Id',
 		type: 'string',
 		default: '',
-		description: 'The license ID.',
+		description: 'The license Id.',
 	},
 	{
 		name: 'barracuda',
@@ -156,17 +156,17 @@ const manufacturerAdditionalInfoProperties: INodeProperties[] = [
 		options: [
 			{
 				name: 'bundleId',
-				displayName: 'Bundle ID',
+				displayName: 'Bundle Id',
 				type: 'string',
 				default: '',
-				description: 'The HP bundle ID.',
+				description: 'The HP bundle Id.',
 			},
 			{
 				name: 'smartQuoteId',
-				displayName: 'Smart Quote ID',
+				displayName: 'Smart Quote Id',
 				type: 'string',
 				default: '',
-				description: 'The HP smart quote ID.',
+				description: 'The HP smart quote Id.',
 			},
 		],
 	},
@@ -202,10 +202,10 @@ const properties: INodeProperties[] = [
 		options: [
 			{
 				name: 'manufacturerPartnerId',
-				displayName: 'Manufacturer Partner ID',
+				displayName: 'Manufacturer Partner Id',
 				type: 'string',
 				default: '',
-				description: 'The manufacturer partner ID of the purchase quote.',
+				description: 'The manufacturer partner Id of the purchase quote.',
 			},
 			{
 				name: 'yourReference',
@@ -331,6 +331,7 @@ const properties: INodeProperties[] = [
 			send: {
 				type: 'body',
 				property: 'lines',
+				value: '={{ $value.line }}',
 			},
 		},
 		typeOptions: {

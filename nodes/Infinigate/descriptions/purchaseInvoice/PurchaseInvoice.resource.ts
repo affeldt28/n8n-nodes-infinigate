@@ -17,8 +17,8 @@ export const description: INodeProperties[] = [
 		},
 		options: [
 			{
-				name: 'Invoice overview list',
-				description: 'Get all DocumentInfo of type PurchaseInvoice for user',
+				name: 'Get Many',
+				description: 'Retrieve a list of purchase invoices',
 				value: 'getAll',
 				routing: {
 					request: {
@@ -26,11 +26,11 @@ export const description: INodeProperties[] = [
 						url: '/invoice-management/v2/purchaseinvoice',
 					},
 				},
-				action: 'Get Invoice overview list',
+				action: 'Get many purchase invoices',
 			},
 			{
-				name: 'Invoice by documentId',
-				description: 'Get the PurchaseInvoice by documentId',
+				name: 'Get by Document Id',
+				description: 'Retrieve a purchase invoice by document Id',
 				value: 'getByDocumentId',
 				routing: {
 					request: {
@@ -38,11 +38,11 @@ export const description: INodeProperties[] = [
 						url: '=/invoice-management/v2/purchaseinvoice/{{ $parameter.documentGuid }}',
 					},
 				},
-				action: 'Get Invoice by documentId',
+				action: 'Get purchase invoice by document Id',
 			},
 			{
-				name: 'Invoice by documentNumber',
-				description: 'Get the PurchaseInvoice by documentNumber',
+				name: 'Get by Document Number',
+				description: 'Retrieve a purchase invoice by document number',
 				value: 'getByDocumentNumber',
 				routing: {
 					request: {
@@ -50,7 +50,7 @@ export const description: INodeProperties[] = [
 						url: '=/invoice-management/v2/purchaseinvoice/documentNumber/{{ $parameter.documentNumber }}',
 					},
 				},
-				action: 'Get Invoice by documentNumber',
+				action: 'Get purchase invoice by document number',
 			},
 		],
 	},

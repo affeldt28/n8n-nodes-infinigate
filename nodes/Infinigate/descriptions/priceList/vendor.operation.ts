@@ -4,23 +4,24 @@ import { limitQueryParameters } from '../shared/QueryParameter';
 const properties: INodeProperties[] = [
 	{
 		name: 'VendorSkus',
-		displayName: 'List of VendorSkus',
+		displayName: 'Vendor SKUs',
 		type: 'collection',
-		description: 'Filter for specific VendorSkus',
-		default: '',
+		description: 'Filter by specific vendor SKUs',
+		default: {},
 		options: [
 			{
-				name: 'Vendor Sku',
-				displayName: 'Vendor Sku',
+				name: 'Vendor SKU',
+				displayName: 'Vendor SKU',
 				type: 'string',
 				default: '',
-				description: 'Filter for specific VendorSku',
+				placeholder: 'e.g. vendorSku',
+				description: 'Vendor SKU to filter by',
 			},
 		],
 		routing: {
 			send: {
 				type: 'query',
-				// API expects the query parameter to be named 'no' for filtering by VenderSkus
+				// API expects the query parameter to be named 'no' for filtering by vendor SKUs.
 				property: 'no',
 			},
 		},

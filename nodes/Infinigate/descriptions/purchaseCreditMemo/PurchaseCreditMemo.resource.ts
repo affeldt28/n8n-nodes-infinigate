@@ -17,8 +17,8 @@ export const description: INodeProperties[] = [
 		},
 		options: [
 			{
-				name: 'CreditMemo overview list',
-				description: 'Get all DocumentInfo of type PurchaseCreditMemo for user',
+				name: 'Get Many',
+				description: 'Retrieve a list of purchase credit memos',
 				value: 'getAll',
 				routing: {
 					request: {
@@ -26,11 +26,11 @@ export const description: INodeProperties[] = [
 						url: '/invoice-management/v2/purchasecreditmemo',
 					},
 				},
-				action: 'Get CreditMemo overview list',
+				action: 'Get many purchase credit memos',
 			},
 			{
-				name: 'CreditMemo by documentId',
-				description: 'Get the PurchaseCreditMemo by documentId',
+				name: 'Get by Document Id',
+				description: 'Retrieve a purchase credit memo by document Id',
 				value: 'getByDocumentId',
 				routing: {
 					request: {
@@ -38,11 +38,11 @@ export const description: INodeProperties[] = [
 						url: '=/invoice-management/v2/purchasecreditmemo/{{ $parameter.documentGuid }}',
 					},
 				},
-				action: 'Get CreditMemo by documentId',
+				action: 'Get purchase credit memo by document Id',
 			},
 			{
-				name: 'CreditMemo by documentNumber',
-				description: 'Get the PurchaseCreditMemo by documentNumber',
+				name: 'Get by Document Number',
+				description: 'Retrieve a purchase credit memo by document number',
 				value: 'getByDocumentNumber',
 				routing: {
 					request: {
@@ -50,7 +50,7 @@ export const description: INodeProperties[] = [
 						url: '=/invoice-management/v2/purchasecreditmemo/documentNumber/{{ $parameter.documentNumber }}',
 					},
 				},
-				action: 'Get CreditMemo by documentNumber',
+				action: 'Get purchase credit memo by document number',
 			},
 		],
 	},

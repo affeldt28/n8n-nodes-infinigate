@@ -25,14 +25,14 @@ export class InfinigateApi implements ICredentialType {
 			default: 'https://api.infinigate.com',
 		},
 		{
-			displayName: 'Client ID',
+			displayName: 'Client Id',
 			name: 'clientId',
 			type: 'string',
 			typeOptions: { password: false },
 			required: true,
 			default: '',
 			description:
-				'ClientId provided by Infinigate. It is sent as client_id when requesting the short-lived authentication token.',
+				'Client Id provided by Infinigate. It is sent as client_id when requesting the short-lived authentication token.',
 		},
 		{
 			displayName: 'Client Secret',
@@ -52,7 +52,7 @@ export class InfinigateApi implements ICredentialType {
 			required: true,
 			default: '',
 			description:
-				'API Key provided by Infinigate. It is sent as the API-KEY header on the token request and all API requests.',
+				'API key provided by Infinigate. It is sent as the API-KEY header on the token request and all API requests.',
 		},
 		{
 			displayName: 'Grant Type',

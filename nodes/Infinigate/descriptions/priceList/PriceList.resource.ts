@@ -19,8 +19,8 @@ export const description: INodeProperties[] = [
 		},
 		options: [
 			{
-				name: 'Get PriceList Item search',
-				description: 'Get PriceList with Stocklevel Item search',
+				name: 'Search Items',
+				description: 'Search price list items with stock levels',
 				value: 'search',
 				routing: {
 					request: {
@@ -28,11 +28,11 @@ export const description: INodeProperties[] = [
 						url: '=/product-management/v1/pricelist/search/{{ $parameter.searchword }}',
 					},
 				},
-				action: 'Get PriceList Item search',
+				action: 'Search price list items',
 			},
 			{
-				name: 'Get PriceList By VendorSku',
-				description: 'Get PriceList with Stocklevel By VendorSku',
+				name: 'Get Items by Vendor SKU',
+				description: 'Retrieve price list items with stock levels by vendor SKU',
 				value: 'vendor',
 				routing: {
 					request: {
@@ -40,11 +40,11 @@ export const description: INodeProperties[] = [
 						url: '/product-management/v1/pricelist/vendor',
 					},
 				},
-				action: 'Get PriceList By VendorSku',
+				action: 'Get price list items by vendor SKU',
 			},
 			{
-				name: 'Get PriceList By Skus',
-				description: 'Get PriceList with Stocklevel By Skus',
+				name: 'Get Items by SKU',
+				description: 'Retrieve price list items with stock levels by SKU',
 				value: 'sku',
 				routing: {
 					request: {
@@ -52,11 +52,12 @@ export const description: INodeProperties[] = [
 						url: '/product-management/v1/pricelist/sku',
 					},
 				},
-				action: 'Get PriceList By Skus',
+				action: 'Get price list items by SKU',
 			},
 			{
-				name: 'Get PriceList Item Count',
-				description: 'Get the count of PriceList Items for the searchword and filter',
+				name: 'Count Items',
+				description:
+					'Get the number of price list items matching a search term and filters',
 				value: 'searchCount',
 				routing: {
 					request: {
@@ -64,11 +65,11 @@ export const description: INodeProperties[] = [
 						url: '=/product-management/v1/pricelist/search/count/{{ $parameter.searchword }}',
 					},
 				},
-				action: 'Get PriceList Item Count',
+				action: 'Count price list items',
 			},
 			{
-				name: 'Get all products for a Manufacturer',
-				description: 'Get all products for a Manufacturer',
+				name: 'Get Items by Manufacturer',
+				description: 'Retrieve price list items for a manufacturer',
 				value: 'getAllByManufacturer',
 				routing: {
 					request: {
@@ -76,7 +77,7 @@ export const description: INodeProperties[] = [
 						url: '/product-management/v1/pricelist/',
 					},
 				},
-				action: 'Get all products for a Manufacturer',
+				action: 'Get price list items by manufacturer',
 			},
 		],
 	},

@@ -15,7 +15,7 @@ export class Infinigate implements INodeType {
 		group: ['input'],
 		subtitle: '={{ $parameter["operation"] + ": " + $parameter["resource"] }}',
 		version: 1,
-		description: 'Interact with infinigate API',
+		description: 'Interact with the Infinigate API',
 		defaults: {
 			name: 'Infinigate',
 		},
@@ -40,19 +40,19 @@ export class Infinigate implements INodeType {
 				default: 'purchaseCreditMemo',
 				options: [
 					{
-						name: 'Purchase credit memo',
+						name: 'Purchase Credit Memo',
 						value: 'purchaseCreditMemo',
 					},
 					{
-						name: 'Purchase invoice',
+						name: 'Purchase Invoice',
 						value: 'purchaseInvoice',
 					},
 					{
-						name: 'Purchase quote',
+						name: 'Purchase Quote',
 						value: 'purchaseQuote',
 					},
 					{
-						name: 'Price list',
+						name: 'Price List',
 						value: 'priceList',
 					},
 					{

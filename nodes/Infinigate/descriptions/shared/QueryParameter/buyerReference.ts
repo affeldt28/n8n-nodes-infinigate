@@ -2,10 +2,11 @@ import { type INodeProperties } from 'n8n-workflow';
 
 export const buyerReferenceQueryParameter: INodeProperties = {
 	name: 'BuyerReference',
-	displayName: 'BuyerReference',
+	displayName: 'Buyer Reference',
 	type: 'string',
 	default: '',
-	description: 'Filter for BuyerReference',
+	placeholder: 'e.g. buyerReference',
+	description: 'Filter by buyer reference',
 	routing: {
 		send: {
 			type: 'query',

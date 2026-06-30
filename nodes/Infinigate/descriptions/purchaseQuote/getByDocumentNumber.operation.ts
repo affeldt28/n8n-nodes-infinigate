@@ -7,7 +7,8 @@ const properties: INodeProperties[] = [
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'The documentNumber of the PurchaseQuote to retrieve',
+		placeholder: 'e.g. documentNumber',
+		description: 'The document number of the purchase quote to retrieve',
 	},
 ];
 
