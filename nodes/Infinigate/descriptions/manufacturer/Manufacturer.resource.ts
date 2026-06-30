@@ -6,7 +6,7 @@ export const description: INodeProperties[] = [
 		name: 'operation',
 		displayName: 'Operation',
 		type: 'options',
-		default: 'search',
+		default: 'getAll',
 		noDataExpression: true,
 		displayOptions: {
 			show: {
