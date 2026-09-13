@@ -1,6 +1,6 @@
 {
 	"name": "@affeldt28/n8n-nodes-infinigate",
-	"version": "1.0.9",
+	"version": "1.0.10",
 	"description": "n8n node for Infinigate",
 	"license": "MIT",
 	"homepage": "https://github.com/affeldt28/n8n-nodes-infinigate",
@@ -52,7 +52,7 @@
 		"@biomejs/biome": "2.5.13",
 		"@n8n/node-cli": "0.47.2",
 		"release-it": "21.0.2",
-		"typescript": "7.0.2"
+		"typescript": "6.0.3"
 	},
 	"peerDependencies": {
 		"n8n-workflow": "*"
