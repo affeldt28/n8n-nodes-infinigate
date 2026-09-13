@@ -1,8 +1,8 @@
 import { type INodeProperties } from 'n8n-workflow';
 
 export const externalDocumentNumberQueryParameter: INodeProperties = {
-	name: 'ExternalDocumentNumber',
 	displayName: 'External Document Number',
+	name: 'ExternalDocumentNumber',
 	type: 'string',
 	default: '',
 	placeholder: 'e.g. externalDocumentNumber',

@@ -8,8 +8,8 @@ import * as request from './request.operation';
 
 export const description: INodeProperties[] = [
 	{
-		name: 'operation',
 		displayName: 'Operation',
+		name: 'operation',
 		type: 'options',
 		default: 'getAll',
 		noDataExpression: true,
@@ -20,20 +20,20 @@ export const description: INodeProperties[] = [
 		},
 		options: [
 			{
-				name: 'Get Many',
-				description: 'Retrieve a list of purchase quotes',
-				value: 'getAll',
+				name: 'Accept',
+				description: 'Accept a purchase quote by document number',
+				value: 'acceptance',
 				routing: {
 					request: {
-						method: 'GET',
-						url: '/order-management/v2/purchasequote',
+						method: 'POST',
+						url: '/order-management/v2/purchasequote/acceptance',
 					},
 				},
-				action: 'Get many purchase quotes',
+				action: 'Accept purchase quote',
 			},
 			{
-				name: 'Get by Document Id',
-				description: 'Retrieve a purchase quote by document Id',
+				name: 'Get by Document ID',
+				description: 'Retrieve a purchase quote by document ID',
 				value: 'getByDocumentId',
 				routing: {
 					request: {
@@ -41,7 +41,7 @@ export const description: INodeProperties[] = [
 						url: '=/order-management/v2/purchasequote/{{ $parameter.documentGuid }}',
 					},
 				},
-				action: 'Get purchase quote by document Id',
+				action: 'Get purchase quote by document id',
 			},
 			{
 				name: 'Get by Document Number',
@@ -56,16 +56,16 @@ export const description: INodeProperties[] = [
 				action: 'Get purchase quote by document number',
 			},
 			{
-				name: 'Accept',
-				description: 'Accept a purchase quote by document number',
-				value: 'acceptance',
+				name: 'Get Many',
+				description: 'Retrieve a list of purchase quotes',
+				value: 'getAll',
 				routing: {
 					request: {
-						method: 'POST',
-						url: '/order-management/v2/purchasequote/acceptance',
+						method: 'GET',
+						url: '/order-management/v2/purchasequote',
 					},
 				},
-				action: 'Accept purchase quote',
+				action: 'Get many purchase quotes',
 			},
 			{
 				name: 'Reject',

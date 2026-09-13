@@ -13,7 +13,10 @@ export class InfinigateApi implements ICredentialType {
 
 	displayName = 'Infinigate API';
 
-	icon: Icon = { light: 'file:../icons/infinigate.svg', dark: 'file:../icons/infinigate.svg' };
+	icon: Icon = {
+		light: 'file:../icons/infinigate.svg',
+		dark: 'file:../icons/infinigate.dark.svg',
+	};
 
 	documentationUrl = 'https://www.infinigate.com/de/services/infinigate-api/';
 
@@ -66,6 +69,7 @@ export class InfinigateApi implements ICredentialType {
 			type: 'hidden',
 			typeOptions: {
 				expirable: true,
+				password: true,
 			},
 			default: '',
 		},

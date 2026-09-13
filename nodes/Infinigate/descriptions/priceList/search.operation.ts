@@ -3,8 +3,8 @@ import { limitQueryParameters } from '../shared/QueryParameter';
 
 const properties: INodeProperties[] = [
 	{
-		name: 'searchword',
 		displayName: 'Search Term',
+		name: 'searchword',
 		type: 'string',
 		default: '',
 		required: true,
@@ -12,15 +12,15 @@ const properties: INodeProperties[] = [
 		description: 'Filter products by search term',
 	},
 	{
-		name: 'VendorCodes',
 		displayName: 'Vendor Codes',
+		name: 'VendorCodes',
 		type: 'collection',
 		description: 'Filter by specific vendor codes',
 		default: {},
 		options: [
 			{
-				name: 'Vendor Code',
 				displayName: 'Vendor Code',
+				name: 'Vendor Code',
 				type: 'string',
 				default: '',
 				placeholder: 'e.g. vendorCode',
@@ -35,15 +35,15 @@ const properties: INodeProperties[] = [
 		},
 	},
 	{
-		name: 'ProductTypes',
 		displayName: 'Product Types',
+		name: 'ProductTypes',
 		type: 'collection',
 		description: 'Filter by specific product types, for example hardware or software',
 		default: {},
 		options: [
 			{
-				name: 'Product Type',
 				displayName: 'Product Type',
+				name: 'Product Type',
 				type: 'string',
 				default: '',
 				placeholder: 'e.g. hardware',
@@ -58,16 +58,16 @@ const properties: INodeProperties[] = [
 		},
 	},
 	{
-		name: 'EndUserTypes',
 		displayName: 'End User Types',
+		name: 'EndUserTypes',
 		type: 'collection',
 		description:
 			'Filter by specific end user types, for example standard, education, or government',
 		default: {},
 		options: [
 			{
-				name: 'End User Type',
 				displayName: 'End User Type',
+				name: 'End User Type',
 				type: 'string',
 				default: '',
 				placeholder: 'e.g. standard',

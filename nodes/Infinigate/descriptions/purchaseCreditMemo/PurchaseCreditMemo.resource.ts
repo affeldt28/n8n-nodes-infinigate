@@ -5,8 +5,8 @@ import * as getByDocumentNumber from './getByDocumentNumber.operation';
 
 export const description: INodeProperties[] = [
 	{
-		name: 'operation',
 		displayName: 'Operation',
+		name: 'operation',
 		type: 'options',
 		default: 'getAll',
 		noDataExpression: true,
@@ -29,8 +29,8 @@ export const description: INodeProperties[] = [
 				action: 'Get many purchase credit memos',
 			},
 			{
-				name: 'Get by Document Id',
-				description: 'Retrieve a purchase credit memo by document Id',
+				name: 'Get by Document ID',
+				description: 'Retrieve a purchase credit memo by document ID',
 				value: 'getByDocumentId',
 				routing: {
 					request: {
@@ -38,7 +38,7 @@ export const description: INodeProperties[] = [
 						url: '=/invoice-management/v2/purchasecreditmemo/{{ $parameter.documentGuid }}',
 					},
 				},
-				action: 'Get purchase credit memo by document Id',
+				action: 'Get purchase credit memo by document id',
 			},
 			{
 				name: 'Get by Document Number',

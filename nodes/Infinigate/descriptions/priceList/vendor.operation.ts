@@ -3,15 +3,15 @@ import { limitQueryParameters } from '../shared/QueryParameter';
 
 const properties: INodeProperties[] = [
 	{
-		name: 'VendorSkus',
 		displayName: 'Vendor SKUs',
+		name: 'VendorSkus',
 		type: 'collection',
 		description: 'Filter by specific vendor SKUs',
 		default: {},
 		options: [
 			{
-				name: 'Vendor SKU',
 				displayName: 'Vendor SKU',
+				name: 'Vendor SKU',
 				type: 'string',
 				default: '',
 				placeholder: 'e.g. vendorSku',

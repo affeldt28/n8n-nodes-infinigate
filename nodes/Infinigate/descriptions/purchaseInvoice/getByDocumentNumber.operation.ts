@@ -2,8 +2,8 @@ import { type INodeProperties, updateDisplayOptions } from 'n8n-workflow';
 
 const properties: INodeProperties[] = [
 	{
-		name: 'documentNumber',
 		displayName: 'Document Number',
+		name: 'documentNumber',
 		type: 'string',
 		default: '',
 		required: true,

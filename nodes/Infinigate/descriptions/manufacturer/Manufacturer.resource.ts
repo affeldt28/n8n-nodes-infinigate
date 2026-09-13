@@ -3,8 +3,8 @@ import * as getAll from './getAll.operation';
 
 export const description: INodeProperties[] = [
 	{
-		name: 'operation',
 		displayName: 'Operation',
+		name: 'operation',
 		type: 'options',
 		default: 'getAll',
 		noDataExpression: true,
@@ -16,7 +16,7 @@ export const description: INodeProperties[] = [
 		options: [
 			{
 				name: 'Get Many',
-				description: 'Get a list of all manufacturer names',
+				description: 'Get a list of many manufacturer names',
 				value: 'getAll',
 				routing: {
 					request: {

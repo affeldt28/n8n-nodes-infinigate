@@ -2,15 +2,15 @@ import { type INodeProperties } from 'n8n-workflow';
 
 export const limitQueryParameters: INodeProperties[] = [
 	{
-		name: 'useLimit',
 		displayName: 'Use Limit',
+		name: 'useLimit',
 		description: 'Whether to limit the number of returned items',
 		type: 'boolean',
 		default: false,
 	},
 	{
-		name: 'Take',
 		displayName: 'Take',
+		name: 'Take',
 		type: 'number',
 		default: 50,
 		description: 'Maximum number of items to return',
@@ -27,8 +27,8 @@ export const limitQueryParameters: INodeProperties[] = [
 		},
 	},
 	{
-		name: 'Skip',
 		displayName: 'Skip',
+		name: 'Skip',
 		type: 'number',
 		default: 0,
 		description: 'Number of items to skip',

@@ -7,8 +7,8 @@ import * as vendor from './vendor.operation';
 
 export const description: INodeProperties[] = [
 	{
-		name: 'operation',
 		displayName: 'Operation',
+		name: 'operation',
 		type: 'options',
 		default: 'search',
 		noDataExpression: true,
@@ -18,42 +18,6 @@ export const description: INodeProperties[] = [
 			},
 		},
 		options: [
-			{
-				name: 'Search Items',
-				description: 'Search price list items with stock levels',
-				value: 'search',
-				routing: {
-					request: {
-						method: 'GET',
-						url: '=/product-management/v1/pricelist/search/{{ $parameter.searchword }}',
-					},
-				},
-				action: 'Search price list items',
-			},
-			{
-				name: 'Get Items by Vendor SKU',
-				description: 'Retrieve price list items with stock levels by vendor SKU',
-				value: 'vendor',
-				routing: {
-					request: {
-						method: 'GET',
-						url: '/product-management/v1/pricelist/vendor',
-					},
-				},
-				action: 'Get price list items by vendor SKU',
-			},
-			{
-				name: 'Get Items by SKU',
-				description: 'Retrieve price list items with stock levels by SKU',
-				value: 'sku',
-				routing: {
-					request: {
-						method: 'GET',
-						url: '/product-management/v1/pricelist/sku',
-					},
-				},
-				action: 'Get price list items by SKU',
-			},
 			{
 				name: 'Count Items',
 				description:
@@ -78,6 +42,42 @@ export const description: INodeProperties[] = [
 					},
 				},
 				action: 'Get price list items by manufacturer',
+			},
+			{
+				name: 'Get Items by SKU',
+				description: 'Retrieve price list items with stock levels by SKU',
+				value: 'sku',
+				routing: {
+					request: {
+						method: 'GET',
+						url: '/product-management/v1/pricelist/sku',
+					},
+				},
+				action: 'Get price list items by SKU',
+			},
+			{
+				name: 'Get Items by Vendor SKU',
+				description: 'Retrieve price list items with stock levels by vendor SKU',
+				value: 'vendor',
+				routing: {
+					request: {
+						method: 'GET',
+						url: '/product-management/v1/pricelist/vendor',
+					},
+				},
+				action: 'Get price list items by vendor SKU',
+			},
+			{
+				name: 'Search Items',
+				description: 'Search price list items with stock levels',
+				value: 'search',
+				routing: {
+					request: {
+						method: 'GET',
+						url: '=/product-management/v1/pricelist/search/{{ $parameter.searchword }}',
+					},
+				},
+				action: 'Search price list items',
 			},
 		],
 	},

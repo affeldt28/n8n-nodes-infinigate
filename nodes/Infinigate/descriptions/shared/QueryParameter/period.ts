@@ -2,8 +2,8 @@ import { type INodeProperties } from 'n8n-workflow';
 
 export const periodQueryParameters: INodeProperties[] = [
 	{
-		name: 'PeriodStart',
 		displayName: 'Period Start',
+		name: 'PeriodStart',
 		type: 'dateTime',
 		default: '',
 		description: 'Filter by the start of the period',
@@ -15,8 +15,8 @@ export const periodQueryParameters: INodeProperties[] = [
 		},
 	},
 	{
-		name: 'PeriodEnd',
 		displayName: 'Period End',
+		name: 'PeriodEnd',
 		type: 'dateTime',
 		default: '',
 		description: 'Filter by the end of the period',

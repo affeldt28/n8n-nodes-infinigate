@@ -2,8 +2,8 @@ import { type INodeProperties, updateDisplayOptions } from 'n8n-workflow';
 
 const properties: INodeProperties[] = [
 	{
-		name: 'searchword',
 		displayName: 'Search Term',
+		name: 'searchword',
 		type: 'string',
 		default: '',
 		required: true,

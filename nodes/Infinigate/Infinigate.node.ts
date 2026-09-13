@@ -11,7 +11,10 @@ export class Infinigate implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Infinigate',
 		name: 'infinigate',
-		icon: { light: 'file:../../icons/infinigate.svg', dark: 'file:../../icons/infinigate.svg' },
+		icon: {
+			light: 'file:../../icons/infinigate.svg',
+			dark: 'file:../../icons/infinigate.dark.svg',
+		},
 		group: ['input'],
 		subtitle: '={{ $parameter["operation"] + ": " + $parameter["resource"] }}',
 		version: 1,
@@ -40,6 +43,14 @@ export class Infinigate implements INodeType {
 				default: 'purchaseCreditMemo',
 				options: [
 					{
+						name: 'Manufacturer',
+						value: 'manufacturer',
+					},
+					{
+						name: 'Price List',
+						value: 'priceList',
+					},
+					{
 						name: 'Purchase Credit Memo',
 						value: 'purchaseCreditMemo',
 					},
@@ -50,14 +61,6 @@ export class Infinigate implements INodeType {
 					{
 						name: 'Purchase Quote',
 						value: 'purchaseQuote',
-					},
-					{
-						name: 'Price List',
-						value: 'priceList',
-					},
-					{
-						name: 'Manufacturer',
-						value: 'manufacturer',
 					},
 				],
 			},

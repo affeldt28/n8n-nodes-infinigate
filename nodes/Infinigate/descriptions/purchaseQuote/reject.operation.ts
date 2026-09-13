@@ -2,8 +2,8 @@ import { type INodeProperties, updateDisplayOptions } from 'n8n-workflow';
 
 const properties: INodeProperties[] = [
 	{
-		name: 'documentNumber',
 		displayName: 'Document Number',
+		name: 'documentNumber',
 		type: 'string',
 		default: '',
 		placeholder: 'e.g. documentNumber',
@@ -16,8 +16,8 @@ const properties: INodeProperties[] = [
 		},
 	},
 	{
-		name: 'documentRevision',
 		displayName: 'Document Revision',
+		name: 'documentRevision',
 		type: 'number',
 		default: 0,
 		description: 'The document revision of the purchase quote',
@@ -29,8 +29,8 @@ const properties: INodeProperties[] = [
 		},
 	},
 	{
-		name: 'rejectedByUserMail',
 		displayName: 'Rejected By User Email',
+		name: 'rejectedByUserMail',
 		type: 'string',
 		default: '',
 		placeholder: 'e.g. nathan@example.com',
@@ -43,8 +43,8 @@ const properties: INodeProperties[] = [
 		},
 	},
 	{
-		name: 'userComments',
 		displayName: 'User Comments',
+		name: 'userComments',
 		type: 'string',
 		default: '',
 		description: 'Comments provided by the user when rejecting the purchase quote',
