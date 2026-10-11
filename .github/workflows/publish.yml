@@ -8,46 +8,6 @@ on:
         type: string
 
 jobs:
-  release:
-    name: 📋 Release
-    runs-on: ubuntu-latest
-
-    permissions:
-      contents: write
-
-    steps:
-      - name: ⬇️ Checkout repo
-        uses: actions/checkout@v7.0.1
-
-      - name: 🏷️ Set version
-        id: version
-        # get version from ref if trigger by tag or from package.json
-        run: |
-          if [[ ${{ github.ref }} == refs/tags/* ]]; then
-            version=${{ github.ref_name }}
-          else
-            version=$(jq -r .version package.json)
-          fi
-          echo "version=${version}" >> $GITHUB_OUTPUT
-
-      - name: 📝 Update CHANGELOG
-        id: changelog
-        uses: requarks/changelog-action@v1.10.3
-        with:
-          token: ${{ github.token }}
-          tag: ${{ steps.version.outputs.version }}
-          excludeTypes: build,docs,other,style
-          writeToFile: false
-
-      - name: 📦 Create Release
-        uses: ncipollo/release-action@v1.21.0
-        with:
-          allowUpdates: true
-          draft: false
-          tag: ${{ steps.version.outputs.version }}
-          name: ${{ steps.version.outputs.version }}
-          body: ${{ steps.changelog.outputs.changes }}
-
   publish:
     name: 🌐 Publish to npm
     runs-on: ubuntu-latest
@@ -61,8 +21,10 @@ jobs:
     steps:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v7.0.1
+        with:
+          ref: ${{ inputs.version }}
 
-      - name: ⚙️ Set up Node.js
+      - name: 🟢 Set up Node.js
         uses: actions/setup-node@v7.0.0
         with:
           node-version: 'lts/*'
